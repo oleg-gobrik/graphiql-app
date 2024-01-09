@@ -16,9 +16,8 @@ describe('GraphiQL page tests', () => {
         </BrowserRouter>
       )
     );
-    screen.debug();
     expect(screen.getByLabelText('API Endpoint')).toBeInTheDocument();
     expect(screen.getByText('Change Endpoint')).toBeInTheDocument();
-    expect(screen.getAllByRole('textbox').length).toBe(4);
+    expect(screen.getAllByRole('textbox').length).toBe(3);
   });
 });
